@@ -159,7 +159,6 @@ body {
 
 .grid-container .mainSide .itemMain {
   margin-top: 10px;
-  margin-right: 10px;
   width: 90%;
   position: relative;
   background-color: white;
@@ -268,12 +267,13 @@ body {
 }
 
 .grid-container .itemRight {
-  width: 10%;
+  width: 100%;
   margin-top: 10px;
   background-color: #fafafa;
 }
 
 .grid-container .itemRight .personCard {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,11 +283,32 @@ body {
           flex-direction: row;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .grid-container .itemRight .personCard .personImg img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+}
+
+.grid-container .itemRight .personCard .personName {
+  margin-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.grid-container .itemRight .personCard .personName p {
+  font-size: 16px;
+}
+
+.grid-container .itemRight .personCard .personfollow a {
+  font-size: 16px;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

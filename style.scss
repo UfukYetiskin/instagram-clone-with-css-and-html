@@ -133,7 +133,7 @@ body {
 
         .itemMain {
             margin-top: 10px;
-            margin-right: 10px;
+            
             width: 90%;
             position: relative;
             background-color: white;
@@ -233,15 +233,16 @@ body {
 
 
     .itemRight {
-        width: 10%;
+        width: 100%;
         margin-top: 10px;
         background-color: #fafafa;
 
         .personCard {
-            
+            width: 100%;
             display: flex;
             flex-direction: row;
             align-content: flex-start;
+            justify-content: space-between;
 
             .personImg {
 
@@ -249,6 +250,20 @@ body {
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
+                }
+            }
+            .personName {
+                margin-left: 10px;
+                align-items: center;
+                align-content: center;
+                p{
+                    font-size: 16px;
+                }
+            }
+            .personfollow{
+                a{
+                    font-size: 16px;
+                    text-decoration: none;
                 }
             }
 
